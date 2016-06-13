@@ -1,14 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>我的个人主站</title>
-	<link rel="stylesheet" href="./css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<h1>欢迎来到我的个人主页</h1>
-	<ul>
-		<li>1</li>
-	</ul>
+  <div id="header">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">
+      <div class="h1"><span></span></div>
+      <div class="h2"><span></span></div>
+    </label>
+    <ul id="menu">
+      <li data-menuanchor="page1" class="active"><a href="#page1">个人主页</a></li>
+      <li data-menuanchor="page2"><a href="#page2">关于我</a></li>
+      <li data-menuanchor="page3"><a href="#page3">我的技能</a></li>
+      <li data-menuanchor="page4"><a href="#page4">作品展示</a></li>
+      <!-- <li data-menuanchor="page5"><a href="#page5">工作经历</a></li> -->
+      <li data-menuanchor="page5"><a href="#page5">联系我</a></li>
+    </ul>
+  </div>
+  <div id="fullpage">
+    <div class="section" id="home">
+      <div class="banner">
+        <div class="banner-text">
+          <h1>欢迎来到我的个人主页</h1>
+          <p>你的工作将会占据生活的大部分，让自己真正满意的唯一办法就是做你相信是伟大的工作。而做伟大工作的唯一途径就是热爱自己的工作。</p>
+          <p class="name">—史蒂夫·乔布斯</p>
+          <hr>
+        </div>
+      </div>
+      <div class="scrolldown">
+        <a href="#page2"></a>
+      </div>
+    </div>
+    <div class="section" id="about">
+      <div class="row">
+        <h2 class="title">关于我</h2>
+        <div class="row title-img">
+          <img src="./image/about.png" alt="">
+        </div>
+        <div class="row">
+          <div class="large-3 columns small-12">
+            <div class="profile-pic">
+              <img src="./image/profilepic.jpg" alt="">
+            </div>
+
+          </div>
+          <div class="large-9 columns small-12">
+            <div class="my-referral">
+              <p>嗨，各位HR，我是王亚林，一个前端工程师。从大学开始接触前端这个岗位，精通div+css布局，精通js代码的编写，熟练html5+css3，jquery，angular，ajax，响应式布局，移动端开发等前端技术的使用。我是一个有梦想，有追求的年轻人。我很热爱前端这个岗位，我期望能在这个广阔的天地里展示自己的才能，不断实现自我的人生价值和追求的目标。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section" id="skills">
+      <div class="row">
+        <h2 class="title">我的技能</h2>
+        <div class="row title-img">
+          <img src="./image/skill.png">
+        </div>
+        <ul class="skills large-6">
+          <li><span class="bar-expand javascript"></span><em>Javascript</em></li>
+          <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+          <li><span class="bar-expand css3"></span><em>CSS3</em></li>
+          <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+          <li><span class="bar-expand angular"></span><em>angular</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section" id="works">
+      <div class="row">
+        <h2 class="title">我的作品</h2>
+        <div class="row title-img">
+          <img src="./image/port.png">
+        </div>
+        <div class="works-banner">
+          <div class="fp-slidesNav bottom" style="margin-left: -28px;">
+            <ul>
+              <li class="tab" ><a href="#" class="active"><span>网站类</span></a></li>
+              <li class="tab" ><a href="#" class=""><span>游戏类</span></a></li>
+              <li class="tab" ><a href="#" class=""><span>应用类</span></a></li>
+              <li class="tab" ><a href="#" class=""><span>移动端</span></a></li>
+            </ul>
+          </div>
+          <div class="slide">
+            <div class="protfolio-wrapper">
+                <div class="large-3 small-6 port-item">
+                  <div class="portfolio-item">
+                    <div class="item-warp">
+                      <a href="">
+                        <img src="./image/jd.png" alt="">
+                        <div class="overlay">
+                          <h4>京东</h4>
+                          <p>布局+js</p>
+                          <div class="btn">VIEW</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="large-3 small-6 port-item">
+                  <div class="portfolio-item">
+                    <div class="item-warp">
+                      <a href="">
+                        <img src="./image/yt.jpg" alt="">
+                        <div class="overlay">
+                          <h4>银泰</h4>
+                          <p>布局+JS</p>
+                          <div class="btn">VIEW</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="large-3 small-6 port-item">
+                  <div class="portfolio-item">
+                    <div class="item-warp">
+                      <a href="">
+                        <img src="./image/wy.jpg" alt="">
+                        <div class="overlay">
+                          <h4>网易邮箱6.0</h4>
+                          <p>fullpage</p>
+                          <div class="btn">VIEW</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="large-3 small-6 port-item">
+                  <div class="portfolio-item">
+                    <div class="item-warp">
+                      <a href="">
+                        <img src="./image/apply.jpg" alt="">
+                        <div class="overlay">
+                          <h4>apple</h4>
+                          <p>响应式</p>
+                          <div class="btn">VIEW</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="protfolio-wrapper">
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/type.jpg" alt="">
+                      <div class="overlay">
+                        <h4>打字游戏</h4>
+                        <p>javascript</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/sl.jpg" alt="">
+                      <div class="overlay">
+                        <h4>扫雷</h4>
+                        <p>jquery</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/tcs.jpg" alt="">
+                      <div class="overlay">
+                        <h4>贪吃蛇</h4>
+                        <p>javascript</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/wzq.jpg" alt="">
+                      <div class="overlay">
+                        <h4>五子棋</h4>
+                        <p>canvas</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="protfolio-wrapper">
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/qq.jpg" alt="">
+                      <div class="overlay">
+                        <h4>QQ音乐</h4>
+                        <p>html5</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/todos.jpg" alt="">
+                      <div class="overlay">
+                        <h4>TODOS</h4>
+                        <p>jquery</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/tx.jpg" alt="">
+                      <div class="overlay">
+                        <h4>提醒事项</h4>
+                        <p>angular</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/zb.jpg" alt="">
+                      <div class="overlay">
+                        <h4>钟表</h4>
+                        <p>canvas</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="protfolio-wrapper">
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/qq.jpg" alt="">
+                      <div class="overlay">
+                        <h4>QQ音乐</h4>
+                        <p>html5</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/todos.jpg" alt="">
+                      <div class="overlay">
+                        <h4>TODOS</h4>
+                        <p>jquery</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/tx.jpg" alt="">
+                      <div class="overlay">
+                        <h4>提醒事项</h4>
+                        <p>angular</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="large-3 small-6 port-item">
+                <div class="portfolio-item">
+                  <div class="item-warp">
+                    <a href="">
+                      <img src="./image/zb.jpg" alt="">
+                      <div class="overlay">
+                        <h4>钟表</h4>
+                        <p>canvas</p>
+                        <div class="btn">VIEW</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section">第五屏</div> -->
+    <div class="section" id="relation">
+      <div class="row">
+        <h2 class="title">联系我</h2>
+        <div class="row title-img">
+          <img src="./image/con1.png" alt="">
+        </div>
+
+        <div class="relation-content large-6 small-12">
+            <div class="img">
+              <img src="./image/erwima.jpg" alt="">
+              <div>手机扫描二维码</div>
+            </div>
+            <div class="lianxi">
+              <p class="iphone">手机：18334783005</p>
+              <p class="emal">邮箱：1532946238@qq.com</p>
+              <p class="qq">QQ：1532946238</p>
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="#page1"></a>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
