@@ -322,28 +322,6 @@ a {
         width: 60%;
         margin: 18px auto 24px auto;
         border: 1px solid rgba(150, 150, 150, 0.1); }
-  #home .scrolldown {
-    display: inline-block;
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 30px; }
-    #home .scrolldown:hover a::after {
-      color: #F06000; }
-    #home .scrolldown a {
-      display: block; }
-      #home .scrolldown a::after {
-        content: '\e632';
-        display: block;
-        font-family: 'iconfont';
-        font-size: 45px;
-        text-align: center;
-        line-height: 42px;
-        color: #FFF;
-        transition: color .3s ease; }
 
 @media screen and (max-width: 767px) {
   #home {

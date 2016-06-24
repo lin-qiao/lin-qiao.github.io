@@ -227,34 +227,6 @@ $small:741px;
       }
     }
   }
-  .scrolldown{
-    display: inline-block;
-    width:42px;
-    height:42px;
-    position: absolute;
-    margin: auto;
-    left:0;
-    right:0;
-    bottom:30px;
-    &:hover{
-      a::after{
-        color: #F06000;
-      }
-    }
-    a{
-      display: block;
-      &::after{
-        content: '\e632';
-        display: block;
-        font-family: 'iconfont';
-        font-size: 45px;
-        text-align: center;
-        line-height: 42px;
-        color:#FFF;
-        transition: color .3s ease;
-      }
-    }
-  }
 }
 @media screen and (max-width:767px) {
   #home{
