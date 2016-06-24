@@ -349,6 +349,11 @@ $small:741px;
     width:78%;
   }
 }
+@media screen and (max-width:767px){
+  #skills .skills{
+    padding-top:50px;
+  }
+}
 #relation{
   padding: 85px 0 45px 0;
   background:url($img+'testimonials-bg.jpg') no-repeat top center;

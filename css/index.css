@@ -425,6 +425,10 @@ a {
 #skills.active .skills li .angular {
   width: 78%; }
 
+@media screen and (max-width: 767px) {
+  #skills .skills {
+    padding-top: 50px; } }
+
 #relation {
   padding: 85px 0 45px 0;
   background: url("../image/testimonials-bg.jpg") no-repeat top center;
