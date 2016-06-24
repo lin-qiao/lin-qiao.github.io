@@ -297,10 +297,8 @@ $small:741px;
   background-color: #2B2B2B;
   text-align: center;
   .skills{
-    position: absolute;
-    right:0;
-    left:0;
-    margin:auto;
+    margin:0 auto;
+    float: none;
     li{
       position: relative;
       margin-bottom: 50px;

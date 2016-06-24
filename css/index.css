@@ -379,10 +379,8 @@ a {
   background-color: #2B2B2B;
   text-align: center; }
   #skills .skills {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto; }
+    margin: 0 auto;
+    float: none; }
     #skills .skills li {
       position: relative;
       margin-bottom: 50px;
