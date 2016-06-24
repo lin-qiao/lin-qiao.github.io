@@ -19,7 +19,6 @@ $(function(){
     var top=$(this).scrollTop();
     for(var i=0;i<off.length;i++){
       if(top>=off[i]){
-        console.log(top,off[4])
         $('#menu li').removeClass('active');
         $('#menu li:nth-child('+(i+1)+')').addClass('active');
         $('.section').removeClass('active');
