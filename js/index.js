@@ -1,15 +1,30 @@
 $(function(){
-  $('#fullpage').fullpage({
-    'verticalCentered': false,
-    'autoScrolling':false,
-    'resize':false,
-    'scrollOverflow':true,
-    'slidesNavigation':true,
-    'controlArrows':false,
-    'css3':true,
-    'scrollOverflow':true,
-    anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
-    menu: '#menu',
-    'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
+  var PH=$(window).height();
+  var ZH=$('.banner').height();
+  $('.section').css({'minHeight':PH});
+  $('.banner').css('top',(PH-ZH)/2);
+
+  var off=[];
+  $('.section').each(function (i,v) {
+     off.push($(v).offset().top);
+  })
+  $('#menu li').on('click',function () {
+    var top=off[$(this).index()];
+    $('body').animate({'scrollTop':top},400);
+    $('#menu li').removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(window).on('scroll',function () {
+    var top=$(this).scrollTop();
+    for(var i=0;i<off.length;i++){
+      if(top>=off[i]){
+        console.log(top,off[4])
+        $('#menu li').removeClass('active');
+        $('#menu li:nth-child('+(i+1)+')').addClass('active');
+        $('.section').removeClass('active');
+        $('.section:nth-child('+(i+1)+')').addClass('active');
+      }
+    }
   })
 })

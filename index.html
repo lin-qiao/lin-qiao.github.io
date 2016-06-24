@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width">
   <title>我的个人主页</title>
   <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link href="css/plugins.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/application.css" media="screen" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
   <div id="header">
@@ -15,12 +18,12 @@
       <div class="h2"><span></span></div>
     </label>
     <ul id="menu">
-      <li data-menuanchor="page1" class="active"><a href="#page1">个人主页</a></li>
-      <li data-menuanchor="page2"><a href="#page2">关于我</a></li>
-      <li data-menuanchor="page3"><a href="#page3">我的技能</a></li>
-      <li data-menuanchor="page4"><a href="#page4">作品展示</a></li>
-      <!-- <li data-menuanchor="page5"><a href="#page5">工作经历</a></li> -->
-      <li data-menuanchor="page5"><a href="#page5">联系我</a></li>
+      <li data-menuanchor="page1" class="active">个人主页</li>
+      <li data-menuanchor="page2">关于我</li>
+      <li data-menuanchor="page3">我的技能</li>
+      <li data-menuanchor="page4">作品展示</li>
+      <!-- <li data-menuanchor="page5">工作经历</li> -->
+      <li data-menuanchor="page5">联系我</li>
     </ul>
   </div>
   <div id="fullpage">
@@ -74,251 +77,127 @@
         </ul>
       </div>
     </div>
-    <div class="section" id="works">
-      <div class="row">
-        <h2 class="title">我的作品</h2>
-        <div class="row title-img">
-          <img src="./image/port.png">
-        </div>
-        <div class="works-banner">
-          <div class="fp-slidesNav bottom" style="margin-left: -28px;">
-            <ul>
-              <li class="tab" ><a href="#" class="active"><span>网站类</span></a></li>
-              <li class="tab" ><a href="#" class=""><span>游戏类</span></a></li>
-              <li class="tab" ><a href="#" class=""><span>应用类</span></a></li>
-              <li class="tab" ><a href="#" class=""><span>移动端</span></a></li>
-            </ul>
-          </div>
-          <div class="slide">
-            <div class="protfolio-wrapper">
-                <div class="large-3 small-6 port-item">
-                  <div class="portfolio-item">
-                    <div class="item-warp">
-                      <a href="/jd" target="_blank">
-                        <img src="./image/jd.png" alt="">
-                        <div class="overlay">
-                          <h4>京东</h4>
-                          <p>布局+js</p>
-                          <div class="btn">VIEW</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="large-3 small-6 port-item">
-                  <div class="portfolio-item">
-                    <div class="item-warp">
-                      <a href="/yt" target="_blank">
-                        <img src="./image/yt.jpg" alt="">
-                        <div class="overlay">
-                          <h4>银泰</h4>
-                          <p>布局+JS</p>
-                          <div class="btn">VIEW</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="large-3 small-6 port-item">
-                  <div class="portfolio-item">
-                    <div class="item-warp">
-                      <a href="wangyi" target="_blank">
-                        <img src="./image/wy.jpg" alt="">
-                        <div class="overlay">
-                          <h4>网易邮箱6.0</h4>
-                          <p>fullpage</p>
-                          <div class="btn">VIEW</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="large-3 small-6 port-item">
-                  <div class="portfolio-item">
-                    <div class="item-warp">
-                      <a href="/apple" target="_blank">
-                        <img src="./image/apply.jpg" alt="">
-                        <div class="overlay">
-                          <h4>apple</h4>
-                          <p>响应式</p>
-                          <div class="btn">VIEW</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="protfolio-wrapper">
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/typegame" target="_blank">
-                      <img src="./image/type.jpg" alt="">
-                      <div class="overlay">
-                        <h4>打字游戏</h4>
-                        <p>javascript</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/sweep" target="_blank">
-                      <img src="./image/sl.jpg" alt="">
-                      <div class="overlay">
-                        <h4>扫雷</h4>
-                        <p>jquery</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/Snake" target="_blank">
-                      <img src="./image/tcs.jpg" alt="">
-                      <div class="overlay">
-                        <h4>贪吃蛇</h4>
-                        <p>javascript</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/gobang" target="_blank">
-                      <img src="./image/wzq.jpg" alt="">
-                      <div class="overlay">
-                        <h4>五子棋</h4>
-                        <p>canvas</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="protfolio-wrapper">
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/qqmusic" target="_blank">
-                      <img src="./image/qq.jpg" alt="">
-                      <div class="overlay">
-                        <h4>QQ音乐</h4>
-                        <p>html5</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/TODO" target="_blank">
-                      <img src="./image/todos.jpg" alt="">
-                      <div class="overlay">
-                        <h4>TODOS</h4>
-                        <p>jquery</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/Reminders" target="_blank">
-                      <img src="./image/tx.jpg" alt="">
-                      <div class="overlay">
-                        <h4>提醒事项</h4>
-                        <p>angular</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/clock" target="_blank">
-                      <img src="./image/zb.jpg" alt="">
-                      <div class="overlay">
-                        <h4>钟表</h4>
-                        <p>canvas</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="protfolio-wrapper">
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/suning" target="_blank">
-                      <img src="./image/suning.jpg" alt="">
-                      <div class="overlay">
-                        <h4>苏宁易购</h4>
-                        <p>移动端布局</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/weixin" target="_blank">
-                      <img src="./image/wx.jpg" alt="">
-                      <div class="overlay">
-                        <h4>微信</h4>
-                        <p>angular</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 small-6 port-item">
-                <div class="portfolio-item">
-                  <div class="item-warp">
-                    <a href="/tenxun" target="_blank">
-                      <img src="./image/tx.png" alt="">
-                      <div class="overlay">
-                        <h4>腾讯新闻</h4>
-                        <p>angular</p>
-                        <div class="btn">VIEW</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div id="page-work" class="section">
+      <div class="my-work-container">
+        <div class="site-inner">
+          <h2 class="title">我的作品</h2>
+          <div class="row title-img">
+            <img src="./image/port.png">
           </div>
         </div>
+
+        <a href="#" class="mobile-filter-select">Filter</a>
+        <nav id="work-filter">
+          <a href="#" class="filter-link active" data-group="all">全部作品</a>
+          <a href="#" class="filter-link" data-group="landingpage">移动端</a>
+          <a href="#" class="filter-link" data-group="webdesign">网站类</a>
+          <a href="#" class="filter-link" data-group="icondesign">游戏类</a>
+          <a href="#" class="filter-link" data-group="template">应用类</a>
+        </nav>
+
+        <section id="work-grid" class="site-inner">
+
+          <div class="work-item" data-groups='["all", "landingpage"]' data-url="/tenxun">
+            <figure class="image-container"><img src="image/tx.png" /></figure>
+            <h2 class="heading h-02">腾讯新闻</h2>
+            <p class="copy-03">angular</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/yt">
+            <figure class="image-container"><img src="image/yt.jpg" /></figure>
+            <h2 class="heading h-02">银泰网</h2>
+            <p class="copy-03">布局+JS</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "landingpage"]' data-url="/weixin">
+            <figure class="image-container"><img src="image/wx.png" /></figure>
+            <h2 class="heading h-02">微信</h2>
+            <p class="copy-03">angular</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "template"]' data-url="/qqmusic">
+            <figure class="image-container"><img src="image/qq.jpg" /></figure>
+            <h2 class="heading h-02">QQ音乐</h2>
+            <p class="copy-03">jquery+html5</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/jd">
+            <figure class="image-container"><img src="image/jd.jpg" /></figure>
+            <h2 class="heading h-02">京东</h2>
+            <p class="copy-03">布局+JS</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="/typegame">
+            <figure class="image-container"><img src="image/type.jpg" /></figure>
+            <h2 class="heading h-02">打字游戏</h2>
+            <p class="copy-03">javascript</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "landingpage"]' data-url="/suning">
+            <figure class="image-container"><img src="image/suning.jpg" /></figure>
+            <h2 class="heading h-02">苏宁易购</h2>
+            <p class="copy-03">移动端布局</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/baidu">
+            <figure class="image-container"><img src="image/bd.jpg" /></figure>
+            <h2 class="heading h-02">百度未来商店</h2>
+            <p class="copy-03">响应式布局+CSS3</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "template"]' data-url="/TODO">
+            <figure class="image-container"><img src="image/todos.jpg" /></figure>
+            <h2 class="heading h-02">TODOS</h2>
+            <p class="copy-03">jquery</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="/sweep">
+            <figure class="image-container"><img src="image/sl.jpg" /></figure>
+            <h2 class="heading h-02">扫雷</h2>
+            <p class="copy-03">jquery</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/apple">
+            <figure class="image-container"><img src="image/apple.jpg" /></figure>
+            <h2 class="heading h-02">苹果</h2>
+            <p class="copy-03">响应式布局</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "template"]' data-url="/Reminders">
+            <figure class="image-container"><img src="image/Reminders.jpg" /></figure>
+            <h2 class="heading h-02">提醒事项</h2>
+            <p class="copy-03">angular</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="/Snake">
+            <figure class="image-container"><img src="image/tcs.jpg" /></figure>
+            <h2 class="heading h-02">贪吃蛇</h2>
+            <p class="copy-03">jquery</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/wangyi">
+            <figure class="image-container"><img src="image/wy.jpg" /></figure>
+            <h2 class="heading h-02">网易邮箱6.0</h2>
+            <p class="copy-03">fullpage.js</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="/gobang">
+            <figure class="image-container"><img src="image/wzq.png" /></figure>
+            <h2 class="heading h-02">五子棋</h2>
+            <p class="copy-03">canvas</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "template"]' data-url="/clock">
+            <figure class="image-container"><img src="image/zb.jpg" /></figure>
+            <h2 class="heading h-02">钟表</h2>
+            <p class="copy-03">canvas</p>
+          </div>
+
+          <div class="shuffle__sizer"></div>
+        </section>
+        <a href="#" class="button main rounded">See My Work</a>
       </div>
     </div>
-    <!-- <div class="section">第五屏</div> -->
     <div class="section" id="relation">
       <div class="row">
         <h2 class="title">联系我</h2>
@@ -344,7 +223,8 @@
     </div>
   </div>
   <script src="js/jquery.js"></script>
-  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/application.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

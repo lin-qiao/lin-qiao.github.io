@@ -141,18 +141,16 @@ $small:741px;
   #menu{
     li{
       display: inline-block;
-      a{
-        display: block;
-        padding:0 20px;
-        line-height: 48px;
-        transition: color .3s ease;
-        color:#fff;
-      }
+      padding:0 20px;
+      line-height: 48px;
+      transition: color .3s ease;
+      color:#fff;
+      cursor: pointer;
     }
-    li:hover a{
+    li:hover{
       color:#F06000;
     }
-    li.active a{
+    li.active{
       color: #F06000;
     }
   }
@@ -190,11 +188,14 @@ $small:741px;
   }
   .banner{
     display: inline-block;
-    margin: 0 auto;
     vertical-align: middle;
     max-width: 1020px;
     width: 85%;
     padding-bottom: 30px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
     .banner-text{
       width:100%;
       h1{
@@ -256,15 +257,15 @@ $small:741px;
   }
 }
 @media screen and (max-width:767px) {
- #home{
-   min-width: 320px;
-   .banner .banner-text h1{
-     font-size: 30px;
-   }
-   .banner .banner-text p{
-     font-size: 15px;
-   }
- }
+  #home{
+    min-width: 320px;
+    .banner .banner-text h1{
+      font-size: 30px;
+    }
+    .banner .banner-text p{
+      font-size: 15px;
+    }
+  }
 }
 .title{
   margin: 0;
@@ -293,9 +294,7 @@ $small:741px;
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
-  .title{
-    color:#333;
-  }
+  background: #23232e;
   .profile-pic{
     transition: all .5s ease;
     text-align: center;
@@ -322,7 +321,7 @@ $small:741px;
 }
 #skills{
   padding: 95px 0 45px 0;
-  background:url($img+'about-b.jpg') no-repeat top center;
+  background:url($img+'about-b.png') no-repeat top center;
   background-color: #2B2B2B;
   text-align: center;
   .skills{
@@ -378,149 +377,6 @@ $small:741px;
     width:78%;
   }
 }
-#works{
-  padding: 55px 0 45px 0;
-  background:url($img+'about-a.jpg') no-repeat top center;
-  position: relative;
-  // &::after{
-  //  content: '';
-  //  height:95px;
-  //  width:100%;
-  //  background: url($img+'about-c.png') no-repeat;
-  //  position: absolute;
-  //  bottom:-95px;
-  //  left:0;
-  //  z-index: 10;
-  // }
-  .title{
-    color:#333;
-  }
-  .protfolio-wrapper{
-    .portfolio-item{
-      position: relative;
-      padding: 0 20px;
-      margin-bottom: 36px;
-      .item-warp{
-        width:100%;
-        box-shadow: 0 1px 1px rgba(0,0,0,.8);
-        &:hover{
-          .overlay{
-            transform: scale(1,1);
-          }
-        }
-      }
-      a{
-        font-size: 0;
-        width:100%;
-        display: block;
-        position: relative;
-        img{
-          width:100%;
-        }
-      }
-      .overlay{
-        width:100%;
-        height:100%;
-        position: absolute;
-        top:0;
-        left:0;
-        background-color: rgba(#2b2b2b,.5);
-        transform: scale(0,0);
-        transition: all .7s ease;
-        .btn{
-          width:34%;
-          padding:10px;
-          text-align: center;
-          border:2px solid #fff;
-          position: absolute;
-          margin:auto;
-          bottom:30px;
-          right:0;
-          left:0;
-          font-size: 12px;
-          color:#fff;
-        }
-        h4{
-          text-align: center;
-          font-weight: lighter;
-          font-size: 18px;
-          color: #fff;
-          margin-top: 50px;
-        }
-        p{
-          text-align: center;
-          font-weight: lighter;
-          font-size: 12px;
-          color:#fff;
-        }
-      }
-    }
-  }
-  .works-banner{
-    padding-top:70px;
-    position: relative;
-  }
-  .fp-slidesNav.bottom{
-    bottom:inherit;
-    top:0px;
-    li{
-      display: none;
-    }
-    li.tab{
-      display: inline-block;
-      color: #000;
-      width:auto;
-      height:auto;
-      vertical-align: top;
-      transition: color .5s ease;
-      a{
-        width:auto;
-        height:auto;
-        margin: 0 10px;
-        text-align: center;
-      }
-      span{
-        width:auto;
-        height:auto;
-        background: none;
-        margin:0;
-        border-radius: 0;
-        left:0;
-        top:0;
-        position: relative;
-      }
-    }
-
-    li.tab a.active span{
-      margin:0;
-      border-radius: 0;
-      color: #F06000;
-      border-bottom: 2px solid lighten(#f06000, 30%);
-      padding-bottom: 3px;
-    }
-    li.tab a:hover span{
-      width:auto;
-      height:auto;
-      margin:0;
-    }
-  }
-  .fp-slidesNav.bottom:nth-child(2){
-    display: none;
-  }
-}
-@media screen and (max-width:400px) {
-  #works .port-item{
-    width:50%;
-    min-width: 200px;
-  }
-}
-@media screen and (max-width:767px){
-  #works .fp-slidesNav.bottom li.tab{
-      a span{
-        font-size: 15px;
-      }
-  }
-}
 #relation{
   padding: 85px 0 45px 0;
   background:url($img+'testimonials-bg.jpg') no-repeat top center;
@@ -528,6 +384,7 @@ $small:741px;
   overflow:hidden;
   background-attachment: fixed;
   text-align: center;
+  position: relative;
   .footer{
     width:100%;
     padding-top: 100px;
@@ -542,16 +399,16 @@ $small:741px;
       display:inline-block;
       transform: rotate(180deg) translateY(80px);
       &::after{
-      position: relative;
-      z-index: 100;
-      content: '\e632';
-      display: block;
-      font-family: 'iconfont';
-      font-size: 45px;
-      text-align: center;
-      line-height: 42px;
-      color: #FFF;
-      transition: color .3s ease;
+        position: relative;
+        z-index: 100;
+        content: '\e632';
+        display: block;
+        font-family: 'iconfont';
+        font-size: 45px;
+        text-align: center;
+        line-height: 42px;
+        color: #FFF;
+        transition: color .3s ease;
       }
       &:hover::after{
         color:#F06000;
@@ -587,4 +444,18 @@ $small:741px;
       text-align: left;
     }
   }
+}
+.section{
+  position: relative;
+  box-sizing: border-box;
+}
+#page-work .filter-link{
+  font-family: "微软雅黑";
+}
+#page-work .h-02{
+  font-family: "微软雅黑";
+  letter-spacing:2px;
+}
+#page-work .copy-03{
+  font-family: '微软雅黑';
 }
