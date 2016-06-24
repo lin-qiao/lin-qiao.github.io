@@ -326,7 +326,8 @@ a {
   #home {
     min-width: 320px; }
     #home .banner .banner-text h1 {
-      font-size: 30px; }
+      font-size: 30px;
+      margin-bottom: 30px; }
     #home .banner .banner-text p {
       font-size: 15px; } }
 
